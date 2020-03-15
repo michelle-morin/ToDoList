@@ -64,6 +64,7 @@ _To view/edit the source code of this application, open the contents of this dir
 * _ASP.NET Core MVC_
 * _dotnet script_
 * _MSTest_
+* _MySQL_
 
 ### License
 
