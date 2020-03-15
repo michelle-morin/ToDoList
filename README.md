@@ -1,22 +1,24 @@
 # _To Do List_
 
-#### _C# Testing practice for Epicodus_, _Mar. 2, 2020_
+#### _ASP.NET MVC practice for Epicodus_, _Mar. 2 2020_
 
-#### By _**Michelle Morin, Eric Settels**_
+#### By _**Michelle Morin**_
 
 ## Description
 
-_This application is a to-list with basic functionality to record items with a description.._
+_This application is a to-list, to keep track of tasks._
 
 ## Specifications:
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
-| Application creates an instance of an Item | Item newItem = new Item() | typeof(Item) is Item |
+| Application creates an instance of an Item | Item newItem = new Item() | new Item object created |
 | Application returns description of Item (e.g., "walk the dog") | newItem.Description | "walk the dog" |
 | Application sets a description for an Item (e.g., "walk the dog") | Item newItem = new Item("walk the dog") | newItem.Description = "walk the dog" |
 | Application adds all new instances of Item to a static list | Item newItem = new Item("walk the dog") | newItem is added to static list property of Item class |
 | Application returns all items in the static list of items | Item newItem = new Item(description) | List<Item> result = { newItem } | 
+| Application creates an instance of a category | Category newCategory = new Category() | new Category item created |
+| Application creates list of items associated with each category | new category object | empty list of items assigned to new category | 
 
 ## Setup/Installation Requirements
 
@@ -37,13 +39,21 @@ _Enter the command ``dotnet tool install -g dotnet-script`` in Terminal (macOS) 
 
 _Enter the following commands in Terminal (macOS) or PowerShell (Windows):_
 * ``cd desktop``
-* ``git clone`` followed by the URL to this repository.
-* ``cd`` followed by the repository name.
+* ``git clone https://github.com/michelle-morin/ToDoList.Solution``
+* ``cd ToDoList.Solution``
 
-_Confirm that you have navigated to the correct directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
+_Confirm that you have navigated to the ToDoList.Solution directory (e.g., by entering the command_ ``pwd`` _in Terminal)._
 
-_Run this console application by entering the following command in Terminal (macOS) or PowerShell (Windows):_
-* ``dotnet run``
+_Run this application by entering the following command in Terminal (macOS) or PowerShell (Windows):_
+* ``cd ToDoList``
+* ``dotnet restore``
+* ``dotnet build``
+* ``dotnet run`` or ``dotnet watch run``
+
+_Test this application by entering the following command in Terminal (macOS) or PowerShell (Windows):_
+* ``cd ToDoList.Tests``
+* ``dotnet restore``
+* ``dotnet test``
 
 _To view/edit the source code of this application, open the contents of this directory in a text editor or IDE of your choice (e.g., to open all contents of the directory in Visual Studio Code on macOS, enter the command_ ``code .`` _in Terminal)._
 
@@ -51,10 +61,12 @@ _To view/edit the source code of this application, open the contents of this dir
 * _Git_
 * _C#_
 * _.NET Core 2.2_
+* _ASP.NET Core MVC_
 * _dotnet script_
+* _MSTest_
 
 ### License
 
 *This webpage is licensed under the MIT license.*
 
-Copyright (c) 2020 **_Michelle Morin, Eric Settels_**
+Copyright (c) 2020 **_Michelle Morin_**
